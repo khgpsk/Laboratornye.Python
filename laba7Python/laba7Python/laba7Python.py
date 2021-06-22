@@ -8,13 +8,13 @@ class Calculator:
     def minus(self, number1, number2):
         return number1 - number2
 
-    def div(self, number1, number2):
+    def delenie(self, number1, number2):
         if number2 == 0:
             print("На 0 делить нельзя!")
         else:
             return number1 / number2
 
-    def multi(self, number1, number2):
+    def ymnowenie(self, number1, number2):
         return number1 * number2
 
     def pow(self, number1, number2):
@@ -25,16 +25,7 @@ class Calculator:
 
     def rand(self, number1, number2):
         return random.uniform(number1, number2)
-
-    def whole_div(self, number1, number2):
-        if number2 == 0:
-            print("На 0 делить нельзя!")
-        else:
-            return number1 / number2
-
-    def mod(self, number1, number2):
-        return number1 % number2
-
+    
     def factorial(self, number1):
         return math.factorial(number1)
 
@@ -64,12 +55,6 @@ while do != "q":
 
     elif do == "0":
         print(calc.rand(number1=int(input("Введите наибольшее значение: ")), number2=int(input("Введите наименьшее значение: "))))
-
-    elif do == "//":
-        print(calc.whole_div(number1=float(input("Введите 1 значение: ")), number2=float(input("Введите 2 значение: "))))
-
-    elif do == "%":
-        print(calc.mod(number1=float(input("Введите 1 значение: ")), number2=float(input("Введите 2 значение: "))))
 
     elif do == "f":
         print(calc.factorial(number1=int(input("Введите  значение: "))))
