@@ -33,33 +33,33 @@ class Calculator:
         return number1*math.pi/180
 
 calc = Calculator()
-do = input("Введите арифметическое действие, либо 0 (рандомное число): ")
-while do != "q":
-    if do == "+":
+znak = input("Введите арифметическое действие, либо 0 (рандомное число): ")
+while znak != "q":
+    if znak == "+":
         print(calc.plus(number1 = float(input("Введите 1 значение: ")),number2 = float(input("Введите 2 значение: "))))
 
-    elif do == "-":
+    elif znak == "-":
         print(calc.minus(number1=float(input("Введите 1 значение: ")), number2=float(input("Введите 2 значение: "))))
 
-    elif do == "/":
+    elif znak == "/":
         print(calc.div(number1=float(input("Введите 1 значение: ")), number2=float(input("Введите 2 значение: "))))
 
-    elif do == "*":
+    elif znak == "*":
         print(calc.multi(number1=float(input("Введите 1 значение: ")), number2=float(input("Введите 2 значение: "))))
 
-    elif do == "^":
+    elif znak == "^":
         print(calc.pow(number1=float(input("Введите 1 значение: ")), number2=float(input("Введите 2 значение: "))))
 
-    elif do == "module":
+    elif znak == "module":
         print(calc.module(number1=float(input("Введите значение: "))))
 
-    elif do == "0":
+    elif znak == "0":
         print(calc.rand(number1=int(input("Введите наибольшее значение: ")), number2=int(input("Введите наименьшее значение: "))))
 
-    elif do == "f":
+    elif znak == "f":
         print(calc.factorial(number1=int(input("Введите  значение: "))))
 
-    elif do == "acos":
+    elif znak == "acos":
         print(math.acos(calc.arccos(number1=float(input("Введите  значение: ")))))
 
-    do = input("Введите оператор или q, что бы закончить: ")
+    znak = input("Введите оператор или q, что бы закончить: ")
