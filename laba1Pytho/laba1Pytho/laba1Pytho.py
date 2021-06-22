@@ -1,5 +1,5 @@
 chislo = int(input("Введите число: "))
-pogchislo = 12
+pogchislo = 20
 if chislo == pogchislo:
     print("Введено пограничное число!")
 if chislo < pogchislo:
