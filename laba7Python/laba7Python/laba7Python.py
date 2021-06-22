@@ -62,4 +62,4 @@ while do != "q":
     elif do == "acos":
         print(math.acos(calc.arccos(number1=float(input("Введите  значение: ")))))
 
-    do = input("Введите оператор или введите q, что бы закончить: ")
+    do = input("Введите оператор или q, что бы закончить: ")
