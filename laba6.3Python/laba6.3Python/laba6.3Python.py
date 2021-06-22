@@ -32,7 +32,7 @@ def arccos(number1):
     return number1*math.pi/180
 
 do = input("Введите арифметическое действие, либо 0 (рандомное число): ")
-while do != "exit":
+while do != "q":
     if do == "+":
         print(plus(number1 = float(input("Введите 1 значение: ")),number2 = float(input("Введите 2 значение: "))))
 
