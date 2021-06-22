@@ -1,19 +1,19 @@
 import math
 import random
 
-do = input("Введите арифметическое действие, либо 0 (рандомное число): ")
+znak = input("Введите арифметическое действие, либо 0 (рандомное число): ")
 
-if do == "+":
+if znak == "+":
     number1 = float(input("Введите 1 значение: "))
     number2 = float(input("Введите 2 значение: "))
     print(number1 + number2)
 
-elif do == "-":
+elif znak == "-":
     number1 = float(input("Введите 1 значение: "))
     number2 = float(input("Введите 2 значение: "))
     print(number1 - number2)
 
-elif do == "/":
+elif znak == "/":
     number1 = float(input("Введите 1 значение: "))
     number2 = float(input("Введите 2 значение: "))
     if number2 == 0:
@@ -21,24 +21,24 @@ elif do == "/":
     else:
         print(number1/number2)
 
-elif do == "*":
+elif znak == "*":
     number1 = float(input("Введите 1 значение: "))
     number2 = float(input("Введите 2 значение: "))
     print(number1 * number2)
 
-elif do == "pow":
+elif znak == "pow":
     number1 = float(input("Введите 1 значение: "))
     number2 = float(input("Введите 2 значение: "))
     print(pow(number1, number2))
 
-elif do == "module":
+elif znak == "module":
     number1 = float(input("Введите значение: "))
     print(abs(number1))
 
-elif do == "0":
+elif znak == "0":
     print(random.randint(0, 1000))
 
-elif do == "div":
+elif znak == "div":
     number1 = float(input("Введите 1 значение: "))
     number2 = float(input("Введите 2 значение: "))
     if number2 != 0:
@@ -46,16 +46,16 @@ elif do == "div":
     else:
         print(number1//number2)
 
-elif do == "mod":
+elif znak == "mod":
     number1 = float(input("Введите 1 значение: "))
     number2 = float(input("Введите 2 значение: "))
     print(number1 % number2)
 
-elif do == "f":
+elif znak == "f":
     number1 = int(input("Введите значение: "))
     print(math.factorial(number1))
 
-elif do == "arccos":
+elif znak == "arccos":
     number1 = float(input("Введите значение: "))
     number11 = number1*math.pi/180
     print(math.acos(number11))
